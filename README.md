@@ -24,12 +24,13 @@ This repo is the global one
 ### Clone it
 First, you need to clone it in "$HOME/.config_common"
 ```bash
-git clone https://github.com/Geam/config.git $HOME/.config_common
+cd
+git clone https://github.com/Jaahd/config.git .config_common
 ```
 ### Run it
 Then run it
 ```bash
-$HOME/.config_common/install.sh <options>
+.config_common/install.sh <options>
 ```
 ### Options
 - -u : Update the symbolic link
@@ -63,7 +64,8 @@ If those name begin with '/', they will be used as given, if not, those names
 will be prefixed. In the second case, the command that will be run is the
 following :
 ```bash
-ln -s $HOME/.config_personal/<file_to_symlink> $HOME/<name_of_symlink>
+cd
+ln -s .config_personal/<file_to_symlink> <name_of_symlink>
 ```
 Note that every time you start the install script with the -u flag, the symblink
 will be updated
@@ -72,13 +74,13 @@ will be updated
 ##### Installation with personal configuration
 ```bash
 cd
-git clone git@github.com:Geam/config_common.git .config_common
+git clone https://github.com/Jaahd/config_common.git .config_common
 cd .config_common
-./install.sh -u -b -f -p git@github.com:Geam/config_personal.git
+./install.sh -u -b -f -p https://github.com/Jaahd/config_personal.git
 ```
 ##### Update symbolic link
 ```bash
-cd $HOME/.config_common
+cd ~/.config_common
 ./install.sh -u -f
 ```
 ## Changelog
