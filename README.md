@@ -25,7 +25,7 @@ This repo is the global one
 First, you need to clone it in "$HOME/.config_common"
 ```bash
 cd
-git clone https://github.com/Jaahd/config.git .config_common
+git clone https://github.com/Jaahd/config_common.git .config_common
 ```
 ### Run it
 Then run it
